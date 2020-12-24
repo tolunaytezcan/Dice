@@ -1,0 +1,32 @@
+.Dice-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.Dice {
+    height: 100%;
+    position: relative;
+
+}
+
+.Dice-rotate img {
+    transform: rotateY( -360deg );
+    transition: transform 1s ease;
+}
+
+.Dice-front, .Dice-back {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.Dice-front {
+    z-index: 2;
+}
+.Dice-back {
+    transform: rotateY(180deg);
+}
